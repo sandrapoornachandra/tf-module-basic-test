@@ -1,10 +1,10 @@
 
 variable "security_groups" {
-  default = [ "sg-0d8a6e86b202c9281" ]
+  default = [ "sg-01e08ae71abfec0c4" ]
 }
 
 variable "zone_id" {
-  default = "Z10339591VMISYKRO12LN"
+  default = "Z07143353VCC4QLIJE3K9"
 }
 
 
