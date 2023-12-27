@@ -1,19 +1,13 @@
-variable "zone_id" {}
-variable "security_groups" {}
-variable "name" {}
-variable "instance_type" {}
+variable "zone_id" {
+  default = "Z07143353VCC4QLIJE3K9"
+}
 
+variable "security_groups" {
+  default =[ "sg-01e08ae71abfec0c4" ]
+}
 
-
-
-zone_id  = ["Z07143353VCC4QLIJE3K9"]
-
-
-
-security_groups =[ "sg-01e08ae71abfec0c4" ]
-
-
-components = {
+variable "components" {
+  default = {
     frontend={
       name= "frontend"
       instance_type= "t3.micro"
@@ -54,6 +48,7 @@ components = {
       name= "payment"
       instance_type= "t3.micro"
     }
+  }
 }
 
 
